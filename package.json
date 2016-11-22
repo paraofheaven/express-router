@@ -1,0 +1,30 @@
+{
+  "name": "express-router",
+  "version": "1.0.0",
+  "description": "Automatic create routers from specified folder for express",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run lint",
+    "lint": "./node_modules/.bin/eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paraofheaven/express-router.git"
+  },
+  "author": "para yong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paraofheaven/express-router/issues"
+  },
+  "homepage": "https://github.com/paraofheaven/express-router#readme",
+  "dependencies":{
+  	"glob":"^7.1.1"
+  },
+  "devDependencies":{
+  	"eslint": "^3.6.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0"
+  }
+}
