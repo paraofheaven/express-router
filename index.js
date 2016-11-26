@@ -4,9 +4,10 @@
 const glob = require('glob');
 const os = require('os');
 
+
 const compose = require('./lib/compose');
 
-const METHOD_ENUM = ['get', 'post', 'put', 'delete', 'patch'];
+const METHOD_ENME = ['get', 'post', 'put', 'delete', 'patch'];
 
 function loadRouter(app, root, options) {
   const opt = options || {};
@@ -46,7 +47,7 @@ function loadRouter(app, root, options) {
 
       if (excludeRules.indexOf(modifiedUrl) !== -1) {
         // Nothing to-do with the excluded rules
-      } else if (METHOD_ENUM.indexOf(method) !== -1) {
+      } else if (METHOD_ENME.indexOf(method) !== -1) {
         if (!handler) throw Error('[express-load-router]: no handler for method: ', method);
 
         app[method](rewriteRules.has(modifiedUrl) ?
