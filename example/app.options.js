@@ -11,6 +11,7 @@ loadRouter(app, path.join(__dirname, 'controllers'), {
   ],
   rewriteRules: new Map([
     ['/home', '/'],
+    ['/index','/index']
   ]),
 });
 
