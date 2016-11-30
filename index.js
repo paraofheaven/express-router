@@ -54,7 +54,7 @@ function loadRouter(app, root, options) {
           rewriteRules.get(modifiedUrl) :
           modifiedUrl, compose(middlewares, modifiedUrl), handler);
       } else {
-        throw Error('[load-router]: invalid method: ', method);
+        throw Error('invalid method: ', method);
       }
     }
 
