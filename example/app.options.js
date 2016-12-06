@@ -10,8 +10,7 @@ loadRouter(app, path.join(__dirname, 'controllers'), {
     '/product/list',
   ],
   rewriteRules: new Map([
-    ['/home', '/'],
-    ['/index','/index']
+    ['/home', '/']
   ]),
 });
 
