@@ -1,5 +1,5 @@
 module.exports.index = {
-  middlewares: [],
+  middlewares: [], 
   handler(req, res) {
     res.send('HOME');
   }
