@@ -17,7 +17,7 @@ function loadRouter(app, root, options) {
     const filePath = file.replace(/\.[^.]*$/, '');
     const controller = require(filePath);
     const urlPrefix = filePath.replace(realRoot, '').replace(/\/index$/, '');
-    const methods = Object.keys(controller);
+    const methods = Object.keys(controller); 
 
     // Handle options
     const excludeRules = opt.excludeRules || [];
@@ -28,7 +28,7 @@ function loadRouter(app, root, options) {
       let modifiedUrl = `${urlPrefix}${name === 'index' ? '' : `/${name}`}`;
       let middlewares = [];
       let method = 'get';
-      let handler;
+      let handler; 
       let params;
 
       switch (typeof body) {
@@ -36,7 +36,7 @@ function loadRouter(app, root, options) {
           params = body.params || [];
           middlewares = body.middlewares || [];
           modifiedUrl += `/${params.join('/')}`;
-          handler = body.handler;
+          handler = body.handler; 
           method = (body.method || 'get').toLowerCase();
           break;
         case 'function':
