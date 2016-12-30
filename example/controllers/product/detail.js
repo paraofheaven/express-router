@@ -7,6 +7,7 @@ exports.index = {
     },
     function (req, res, next) {
       console.log('Middleware 2');
+      console.log("then compass translate");
       next();
     },
   ],
