@@ -2,6 +2,7 @@
 const path = require('path');
 const express = require('express');
 const loadRouter = require('..');
+const app =require("../app")
 
 const app = express();
 
