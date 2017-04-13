@@ -1,0 +1,1 @@
+const loadRouter =require("../index");
